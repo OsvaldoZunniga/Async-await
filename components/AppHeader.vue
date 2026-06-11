@@ -4,19 +4,13 @@
 
         <nav>
             <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/cursos">Cursos</NuxtLink>
-            <NuxtLink to="/favoritos" class="nav-favoritos">
-                Favoritos
-                <span v-if="contadorFavoritos > 0" class="badge">{{ contadorFavoritos }}</span>
-            </NuxtLink>
-            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/post">Post</NuxtLink>
+            <NuxtLink to="/albums">Albums</NuxtLink>
+            <NuxtLink to="/users"">Users</NuxtLink>
         </nav>
     </header>
 </template>
 
-<script setup>
-const { contadorFavoritos } = useCursos();
-</script>
 
 <style lang="scss">
 .app-header {
